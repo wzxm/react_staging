@@ -6,6 +6,7 @@ export default {
     fetchJsonp: () => {
         fetchJsonp('https://cms.ppmoney.com/json/57eb758209c131dc7243ec3f.json')
         .then(function(res){
+            console.log(res)
             return res.json();
         }).then((json) => {
             console.log(json)
